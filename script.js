@@ -1,4 +1,4 @@
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.body.style.opacity = "1";
-});
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
