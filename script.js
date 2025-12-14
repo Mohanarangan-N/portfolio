@@ -1,1 +1,4 @@
-console.log("Portfolio loaded successfully");
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.style.opacity = "1";
+});
