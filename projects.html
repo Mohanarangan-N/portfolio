@@ -1,32 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Projects | Mohanarangan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<div class="section">
-  <h2>My Projects</h2>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav>
+      <div>
+        <h2>Mohanarangan</h2>
+      </div>
 
-  <div class="project-card">
-    <h3>AI-Powered Store Shopping Assistant</h3>
-    <p>Smart supermarket automation system.</p>
-    <a href="project-store.html" class="btn secondary">View Details</a>
-  </div>
+      <!-- Hamburger / 3-dot menu -->
+      <div onclick="toggleMenu()" style="cursor:pointer;">
+        &#8942;
+      </div>
 
-  <div class="project-card">
-    <h3>Balanced Plate</h3>
-    <p>AI-powered nutrition & meal planning system.</p>
-    <a href="project-balancedplate.html" class="btn secondary">View Details</a>
-  </div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="project-card">
-    <h3>Eco Watcher</h3>
-    <p>Community-driven environmental platform.</p>
-    <a href="project-ecowatcher.html" class="btn secondary">View Details</a>
-  </div>
-</div>
+  <!-- ================= PROJECTS INTRO ================= -->
+  <section>
+    <h1>Projects</h1>
+
+    <p>
+      My projects reflect my interest in solving real-world problems using
+      intelligent systems, automation, and modern web technologies. Each project
+      is built with a focus on practical usability, logical design, and
+      scalability.
+    </p>
+
+    <p>
+      Rather than creating simple demo applications, I aim to design systems
+      that address actual challenges in domains such as retail automation,
+      healthcare assistance, and environmental monitoring.
+    </p>
+  </section>
+
+  <!-- ================= PROJECT 1 ================= -->
+  <section>
+    <h2>AI-Powered In-Store Shopping Assistant</h2>
+
+    <p>
+      This project focuses on transforming the traditional in-store shopping
+      experience using artificial intelligence and automation.
+    </p>
+
+    <h3>Problem Statement</h3>
+    <p>
+      Large supermarkets often face challenges such as long queues, difficulty
+      in locating products, inefficient stock handling, and poor customer
+      experience during peak hours.
+    </p>
+
+    <h3>Solution Overview</h3>
+    <p>
+      The AI-powered shopping assistant is designed to receive customer grocery
+      lists, check real-time product availability, estimate total bills, assist
+      with item picking, and deliver items to a pickup point.
+    </p>
+
+    <h3>Key Highlights</h3>
+    <ul>
+      <li>Automated grocery list processing</li>
+      <li>Real-time stock validation</li>
+      <li>Intelligent bill estimation</li>
+      <li>Optimized in-store navigation support</li>
+    </ul>
+
+    <a href="project-ai-store.html">View Full Project Documentation →</a>
+  </section>
+
+  <!-- ================= PROJECT 2 ================= -->
+  <section>
+    <h2>Balanced Plate – AI Meal & Nutrition Assistant</h2>
+
+    <p>
+      Balanced Plate is an AI-powered application focused on promoting healthy
+      eating habits through intelligent meal suggestions.
+    </p>
+
+    <h3>Problem Statement</h3>
+    <p>
+      Many individuals struggle to plan nutritious meals due to lack of
+      knowledge, time constraints, and limited ingredient availability.
+    </p>
+
+    <h3>Solution Overview</h3>
+    <p>
+      The application suggests healthy meals based on user-provided ingredients,
+      dietary preferences, and nutritional goals, rather than fixed dish names.
+    </p>
+
+    <h3>Key Highlights</h3>
+    <ul>
+      <li>Ingredient-based meal suggestions</li>
+      <li>AI-driven nutrition awareness</li>
+      <li>User-friendly and guided interaction</li>
+      <li>Health-focused design approach</li>
+    </ul>
+
+    <a href="project-balanced-plate.html">View Full Project Documentation →</a>
+  </section>
+
+  <!-- ================= PROJECT 3 ================= -->
+  <section>
+    <h2>Eco Watcher – Community Environmental Monitoring Platform</h2>
+
+    <p>
+      Eco Watcher is a digital platform designed to empower communities to report
+      and monitor environmental issues collaboratively.
+    </p>
+
+    <h3>Problem Statement</h3>
+    <p>
+      Environmental pollution often goes unreported or unnoticed due to lack of
+      accessible reporting tools and centralized monitoring systems.
+    </p>
+
+    <h3>Solution Overview</h3>
+    <p>
+      Eco Watcher enables users to report pollution incidents, visualize data on
+      maps, and analyze environmental conditions at a community level.
+    </p>
+
+    <h3>Key Highlights</h3>
+    <ul>
+      <li>Community-driven reporting system</li>
+      <li>Environmental data visualization</li>
+      <li>Location-based monitoring</li>
+      <li>Awareness-focused platform design</li>
+    </ul>
+
+    <a href="project-eco-watcher.html">View Full Project Documentation →</a>
+  </section>
+
+  <!-- ================= PROJECT PHILOSOPHY ================= -->
+  <section>
+    <h2>Project Development Philosophy</h2>
+
+    <p>
+      Each project is approached with a strong emphasis on understanding the
+      problem deeply before designing a solution. I focus on clarity,
+      maintainability, and future scalability.
+    </p>
+
+    <p>
+      These projects represent my continuous learning journey and my commitment
+      to building meaningful, real-world software solutions.
+    </p>
+  </section>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 </html>
