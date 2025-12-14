@@ -6,8 +6,9 @@
 </head>
 <body>
 
-<header class="navbar">
-  <h2>Mohanarangan</h2>
+<header>
+  <div class="logo">Mohanarangan</div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -15,22 +16,39 @@
     <a href="projects.html">Projects</a>
     <a href="skills.html">Skills</a>
     <a href="contact.html">Contact</a>
-    <a href="resume.pdf" class="btn primary" download>Download Resume</a>
   </nav>
+
+  <div class="menu-btn" onclick="toggleMenu()">⋮</div>
+
+  <div class="mobile-nav" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </header>
 
-<section class="hero">
+<section class="section hero">
   <div>
-    <h1>Hello, I'm <span style="color:#ffd369">Mohanarangan</span></h1>
+    <h1>Hello, I’m Mohanarangan</h1>
     <p>
-      A second-year Computer Science and Engineering student passionate about
-      Artificial Intelligence, automation, and real-world software systems.
+      I am a second-year B.Tech Computer Science and Engineering student at
+      C.P. Manakular Vinayagar Engineering College, Puducherry.
+      I am deeply interested in Artificial Intelligence, automation,
+      and building real-world software systems.
     </p>
-    <a href="projects.html" class="btn primary">View Projects</a>
-    <a href="contact.html" class="btn secondary">Contact Me</a>
+    <p>
+      My approach to learning is simple: understand deeply, build practically,
+      and continuously improve. I focus on creating systems that are logical,
+      scalable, and meaningful.
+    </p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
   </div>
   <img src="profile.jpg">
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
