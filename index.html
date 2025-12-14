@@ -1,54 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mohanarangan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohanarangan | Portfolio</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+
+nav h1{
+  font-size:22px;
+  font-weight:600;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#fff;
+  font-weight:500;
+}
+
+.menu{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+  min-height:100vh;
+  padding:120px 10%;
+  animation:fadeUp 1s ease;
+}
+
+h2{
+  font-size:38px;
+  margin-bottom:20px;
+}
+
+p{
+  font-size:17px;
+  line-height:1.8;
+  opacity:0.95;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hero h2{
+  font-size:50px;
+}
+
+.hero span{
+  color:#00eaff;
+}
+
+.btn{
+  margin-top:30px;
+  padding:14px 30px;
+  background:#00eaff;
+  color:#000;
+  border:none;
+  font-size:16px;
+  border-radius:30px;
+  cursor:pointer;
+  width:fit-content;
+}
+
+/* CARDS */
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:25px;
+  border-radius:15px;
+  margin-top:25px;
+}
+
+/* TIMELINE */
+.timeline{
+  border-left:3px solid #00eaff;
+  padding-left:25px;
+}
+
+.timeline div{
+  margin-bottom:30px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav ul{
+    display:none;
+    position:absolute;
+    top:60px;
+    right:30px;
+    background:#000;
+    flex-direction:column;
+    padding:20px;
+    border-radius:10px;
+  }
+  nav ul.show{
+    display:flex;
+  }
+  .menu{
+    display:block;
+  }
+  section{
+    padding:120px 6%;
+  }
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">Mohanarangan</div>
+<nav>
+  <h1>Mohanarangan</h1>
+  <div class="menu" onclick="toggle()">⋮</div>
+  <ul id="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="education.html">Education</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="menu-btn" onclick="toggleMenu()">⋮</div>
-
-  <div class="mobile-nav" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="education.html">Education</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</header>
-
-<section class="section hero">
-  <div>
-    <h1>Hello, I’m Mohanarangan</h1>
-    <p>
-      I am a second-year B.Tech Computer Science and Engineering student at
-      C.P. Manakular Vinayagar Engineering College, Puducherry.
-      I am deeply interested in Artificial Intelligence, automation,
-      and building real-world software systems.
-    </p>
-    <p>
-      My approach to learning is simple: understand deeply, build practically,
-      and continuously improve. I focus on creating systems that are logical,
-      scalable, and meaningful.
-    </p>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
-  </div>
-  <img src="profile.jpg">
+<!-- HOME -->
+<section id="home" class="hero">
+  <h2>Hello, I’m <span>Mohanarangan</span></h2>
+  <p>
+    Computer Science and Engineering undergraduate passionate about Artificial Intelligence,
+    automation systems, and building intelligent real-world software solutions.
+  </p>
+  <button class="btn">Download Resume</button>
 </section>
 
-<script src="script.js"></script>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a Computer Science and Engineering student currently pursuing my B.Tech
+      at C.P. Manakular Vinayagar Engineering College, Puducherry.
+      I focus on understanding technology deeply and applying it practically
+      through real-world projects.
+    </p>
+    <p>
+      My interests lie in Artificial Intelligence, system automation, and modern web development.
+      I enjoy designing scalable, efficient, and user-focused software systems.
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="timeline">
+    <div>
+      <h3>B.Tech – Computer Science & Engineering</h3>
+      <p>C.P. Manakular Vinayagar Engineering College, Puducherry (Currently 2nd Year)</p>
+    </div>
+    <div>
+      <h3>Schooling</h3>
+      <p>
+        Completed entire schooling in Puducherry, developing strong academic foundations,
+        discipline, and analytical thinking.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>AI-Powered Store Shopping Assistant</h3>
+    <p>
+      A retail automation system that processes grocery lists, checks inventory availability,
+      estimates billing, and optimizes shopping workflows using intelligent logic.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Balanced Plate – AI Meal Planner</h3>
+    <p>
+      An AI-based meal planning application that suggests healthy meals based on ingredients,
+      dietary preferences, and nutritional balance.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Eco Watcher – Environmental Platform</h3>
+    <p>
+      A community-driven environmental monitoring platform enabling pollution reporting
+      and awareness through data visualization.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <p><b>Programming:</b> Python, JavaScript, HTML, CSS</p>
+    <p><b>AI & Automation:</b> LLMs, Prompt Engineering, API Integration, n8n</p>
+    <p><b>Concepts:</b> System Design, Problem Solving, Web Development</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: your.email@example.com</p>
+    <p>GitHub: github.com/yourprofile</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  </div>
+</section>
+
+<script>
+function toggle(){
+  document.getElementById("nav").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
