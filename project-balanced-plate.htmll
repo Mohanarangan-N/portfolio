@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Balanced Plate | AI Meal & Nutrition Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <nav>
+    <div>
+      <h2>Mohanarangan</h2>
+    </div>
+
+    <!-- Hamburger / 3-dot menu -->
+    <div onclick="toggleMenu()" style="cursor:pointer;">
+      &#8942;
+    </div>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= PROJECT TITLE ================= -->
+<section>
+  <h1>Balanced Plate</h1>
+  <h3>AI-Based Meal Planning & Nutrition Assistance System</h3>
+
+  <p>
+    Balanced Plate is an artificial intelligence–driven meal and nutrition
+    assistance system designed to promote healthier eating habits through
+    personalized, ingredient-based meal recommendations.
+  </p>
+</section>
+
+<!-- ================= ABSTRACT ================= -->
+<section>
+  <h2>Project Abstract</h2>
+
+  <p>
+    Maintaining a healthy diet is a major challenge for many individuals due to
+    lack of nutritional awareness, busy lifestyles, and limited meal planning
+    skills. Most existing meal applications rely on fixed recipes that may not
+    match available ingredients or individual preferences.
+  </p>
+
+  <p>
+    Balanced Plate addresses this problem by using AI to generate flexible meal
+    suggestions based on user-provided ingredients, dietary preferences, and
+    nutritional goals. The system emphasizes balance, sustainability, and
+    personalization rather than rigid recipe selection.
+  </p>
+</section>
+
+<!-- ================= PROBLEM STATEMENT ================= -->
+<section>
+  <h2>Problem Statement</h2>
+
+  <ul>
+    <li>Lack of awareness about balanced nutrition</li>
+    <li>Difficulty in planning meals with available ingredients</li>
+    <li>Overdependence on repetitive or unhealthy food choices</li>
+    <li>Limited personalization in existing diet applications</li>
+    <li>Complex interfaces that discourage regular use</li>
+  </ul>
+
+  <p>
+    These challenges indicate the need for a simple yet intelligent meal
+    assistance system that adapts to user needs.
+  </p>
+</section>
+
+<!-- ================= OBJECTIVES ================= -->
+<section>
+  <h2>Project Objectives</h2>
+
+  <ul>
+    <li>To promote healthy and balanced eating habits</li>
+    <li>To provide ingredient-based meal recommendations</li>
+    <li>To adapt meal suggestions based on user preferences</li>
+    <li>To simplify nutrition planning using AI</li>
+    <li>To create an intuitive and user-friendly interface</li>
+  </ul>
+</section>
+
+<!-- ================= SYSTEM OVERVIEW ================= -->
+<section>
+  <h2>System Overview</h2>
+
+  <p>
+    Balanced Plate operates as an interactive AI assistant that communicates
+    with users through a simple input interface. Users provide available
+    ingredients, dietary preferences, and optional constraints.
+  </p>
+
+  <p>
+    The AI engine analyzes the inputs, maps them to nutritional guidelines, and
+    generates meal suggestions that maintain a balance of proteins,
+    carbohydrates, fats, and essential nutrients.
+  </p>
+</section>
+
+<!-- ================= KEY FEATURES ================= -->
+<section>
+  <h2>Key Features</h2>
+
+  <ul>
+    <li>Ingredient-based meal generation</li>
+    <li>AI-powered nutrition reasoning</li>
+    <li>Diet preference handling (vegetarian, non-vegetarian, etc.)</li>
+    <li>Simple and guided user interaction</li>
+    <li>Health-focused recommendation logic</li>
+  </ul>
+</section>
+
+<!-- ================= TECHNOLOGIES USED ================= -->
+<section>
+  <h2>Technologies Used</h2>
+
+  <ul>
+    <li>Python for backend processing</li>
+    <li>Artificial Intelligence and LLMs</li>
+    <li>Prompt engineering for meal generation</li>
+    <li>Streamlit for user interface</li>
+    <li>API integration for AI models</li>
+  </ul>
+</section>
+
+<!-- ================= WORKFLOW ================= -->
+<section>
+  <h2>System Workflow</h2>
+
+  <ol>
+    <li>User inputs available ingredients</li>
+    <li>User specifies dietary preferences</li>
+    <li>AI processes nutritional requirements</li>
+    <li>Balanced meal suggestions are generated</li>
+    <li>Output is presented in an easy-to-follow format</li>
+  </ol>
+</section>
+
+<!-- ================= USE CASES ================= -->
+<section>
+  <h2>Use Case Scenarios</h2>
+
+  <p>
+    Balanced Plate is suitable for students, working professionals, families,
+    and individuals seeking healthier meal planning without complexity.
+  </p>
+
+  <p>
+    It is especially useful for people with limited cooking time or restricted
+    ingredient availability.
+  </p>
+</section>
+
+<!-- ================= FUTURE ENHANCEMENTS ================= -->
+<section>
+  <h2>Future Enhancements</h2>
+
+  <ul>
+    <li>Calorie and macro-nutrient tracking</li>
+    <li>Voice-based interaction</li>
+    <li>Personalized diet history</li>
+    <li>Integration with fitness apps</li>
+    <li>Mobile application version</li>
+  </ul>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section>
+  <h2>Conclusion</h2>
+
+  <p>
+    Balanced Plate demonstrates how artificial intelligence can be used to make
+    healthy eating simple, personalized, and sustainable.
+  </p>
+
+  <p>
+    The project highlights the potential of AI-driven systems in improving
+    lifestyle choices and overall well-being.
+  </p>
+</section>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
