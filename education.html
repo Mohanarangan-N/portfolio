@@ -1,22 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Education</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Education | Mohanarangan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<div class="section">
-  <h2>Education Timeline</h2>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav>
+      <div>
+        <h2>Mohanarangan</h2>
+      </div>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <h3>B.Tech – Computer Science & Engineering</h3>
-      <p>C.P. Manakular Vinayagar Engineering College, Puducherry</p>
-      <p>Currently Pursuing – Second Year</p>
-    </div>
-  </div>
-</div>
+      <!-- Hamburger / 3-dot menu -->
+      <div onclick="toggleMenu()" style="cursor:pointer;">
+        &#8942;
+      </div>
+
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= EDUCATION INTRO ================= -->
+  <section>
+    <h1>Education</h1>
+
+    <p>
+      My educational journey reflects a consistent progression of learning,
+      discipline, and intellectual curiosity. From foundational schooling to
+      professional engineering education, each stage has played a significant
+      role in shaping my academic mindset and technical capabilities.
+    </p>
+
+    <p>
+      I have always approached education with a focus on understanding concepts
+      deeply rather than memorizing information. This mindset continues to guide
+      my academic and professional development.
+    </p>
+  </section>
+
+  <!-- ================= UNDERGRADUATE EDUCATION ================= -->
+  <section>
+    <h2>Bachelor of Technology (B.Tech) – Computer Science and Engineering</h2>
+
+    <p><strong>Institution:</strong> C.P. Manakular Vinayagar Engineering College</p>
+    <p><strong>Location:</strong> Puducherry, India</p>
+    <p><strong>Status:</strong> Currently Pursuing (2nd Year)</p>
+
+    <p>
+      I am currently pursuing my undergraduate degree in Computer Science and
+      Engineering, where I am building a strong foundation in core computing
+      concepts and modern software technologies.
+    </p>
+
+    <p>
+      The curriculum has provided exposure to both theoretical and practical
+      aspects of computer science, including programming, data structures,
+      software development principles, and system design.
+    </p>
+
+    <p>
+      Alongside academic coursework, I actively engage in independent learning
+      and project development to strengthen my real-world problem-solving skills.
+      This combination of theory and practice has helped me grow as a confident
+      and capable learner.
+    </p>
+  </section>
+
+  <!-- ================= HIGHER SECONDARY SCHOOL ================= -->
+  <section>
+    <h2>Higher Secondary Education (5th – 12th Standard)</h2>
+
+    <p><strong>School:</strong> Amalurpom Higher Secondary School</p>
+    <p><strong>Location:</strong> Puducherry, India</p>
+
+    <p>
+      I completed my middle school and higher secondary education at Amalurpom
+      Higher Secondary School, where I studied from 5th standard through 12th
+      standard.
+    </p>
+
+    <p>
+      This phase of my education played a crucial role in building discipline,
+      consistency, and academic responsibility. It was during this period that
+      I developed strong fundamentals in mathematics, science, and logical
+      reasoning.
+    </p>
+
+    <p>
+      My schooling experience here helped me understand the importance of
+      structured learning, time management, and perseverance—qualities that
+      continue to support my engineering studies today.
+    </p>
+  </section>
+
+  <!-- ================= PRIMARY SCHOOL ================= -->
+  <section>
+    <h2>Primary Education (Up to 4th Standard)</h2>
+
+    <p><strong>School:</strong> Petit Seminar Higher Secondary School</p>
+    <p><strong>Location:</strong> Puducherry, India</p>
+
+    <p>
+      I completed my early foundational education at Petit Seminar Higher
+      Secondary School. This stage laid the groundwork for my academic discipline
+      and learning habits.
+    </p>
+
+    <p>
+      During my primary schooling, I developed essential skills such as reading,
+      writing, comprehension, and curiosity-driven learning, which formed the
+      base for my future academic growth.
+    </p>
+  </section>
+
+  <!-- ================= ACADEMIC DEVELOPMENT ================= -->
+  <section>
+    <h2>Academic Development and Growth</h2>
+
+    <p>
+      Each stage of my education has contributed uniquely to my development as
+      a learner and problem solver. From foundational schooling to engineering
+      education, I have gradually transitioned from structured learning to
+      independent exploration.
+    </p>
+
+    <p>
+      My academic journey reflects a steady evolution toward analytical thinking,
+      self-learning, and real-world application of knowledge.
+    </p>
+  </section>
+
+  <!-- ================= EDUCATIONAL PHILOSOPHY ================= -->
+  <section>
+    <h2>Educational Philosophy</h2>
+
+    <p>
+      I believe education is most effective when it encourages curiosity,
+      critical thinking, and continuous improvement. Rather than focusing solely
+      on grades, I prioritize skill development and conceptual clarity.
+    </p>
+
+    <p>
+      This philosophy drives my approach to learning new technologies, building
+      projects, and preparing for professional challenges.
+    </p>
+  </section>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 </html>
