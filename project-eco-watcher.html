@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco Watcher | Community Environmental Monitoring</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <nav>
+    <div>
+      <h2>Mohanarangan</h2>
+    </div>
+
+    <!-- Hamburger / 3-dot menu -->
+    <div onclick="toggleMenu()" style="cursor:pointer;">
+      &#8942;
+    </div>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= PROJECT TITLE ================= -->
+<section>
+  <h1>Eco Watcher</h1>
+  <h3>Community-Driven Environmental Monitoring Platform</h3>
+
+  <p>
+    Eco Watcher is a digital platform that empowers communities to report,
+    monitor, and analyze environmental issues collaboratively. It aims to
+    increase environmental awareness and provide actionable data for
+    sustainable solutions.
+  </p>
+</section>
+
+<!-- ================= ABSTRACT ================= -->
+<section>
+  <h2>Project Abstract</h2>
+
+  <p>
+    Environmental pollution and hazards often go unreported due to lack of
+    accessible monitoring tools. Traditional environmental reporting systems
+    are slow, fragmented, and do not provide real-time insights.
+  </p>
+
+  <p>
+    Eco Watcher bridges this gap by providing a centralized, user-friendly
+    platform where individuals can report pollution, track environmental
+    metrics, and visualize data on maps. It promotes community participation
+    and accountability.
+  </p>
+</section>
+
+<!-- ================= PROBLEM STATEMENT ================= -->
+<section>
+  <h2>Problem Statement</h2>
+
+  <ul>
+    <li>Lack of real-time community-driven environmental reporting</li>
+    <li>Difficulty in tracking pollution hotspots efficiently</li>
+    <li>Limited tools for visualizing environmental data</li>
+    <li>Low awareness about local environmental conditions</li>
+    <li>Inaccessibility of actionable insights for policy or intervention</li>
+  </ul>
+
+  <p>
+    These issues highlight the need for an accessible, interactive, and
+    community-focused environmental monitoring system.
+  </p>
+</section>
+
+<!-- ================= OBJECTIVES ================= -->
+<section>
+  <h2>Project Objectives</h2>
+
+  <ul>
+    <li>Enable community members to report pollution incidents easily</li>
+    <li>Visualize environmental data in real time on interactive maps</li>
+    <li>Encourage community participation and accountability</li>
+    <li>Provide actionable insights for local authorities and organizations</li>
+    <li>Promote awareness and sustainable environmental practices</li>
+  </ul>
+</section>
+
+<!-- ================= SYSTEM OVERVIEW ================= -->
+<section>
+  <h2>System Overview</h2>
+
+  <p>
+    Eco Watcher is a web-based platform where users can submit reports about
+    environmental issues such as air, water, or land pollution. Reports include
+    images, location data, and descriptions.
+  </p>
+
+  <p>
+    The platform aggregates data, visualizes it using maps and charts, and
+    provides analytics to identify trends, hotspots, and potential interventions.
+  </p>
+</section>
+
+<!-- ================= KEY FEATURES ================= -->
+<section>
+  <h2>Key Features</h2>
+
+  <ul>
+    <li>Community-driven reporting system for pollution incidents</li>
+    <li>Geolocation-based visualization on maps</li>
+    <li>Real-time analytics and trends tracking</li>
+    <li>Data-driven insights for authorities and NGOs</li>
+    <li>Interactive dashboard for monitoring and awareness</li>
+    <li>Encourages citizen participation in environmental protection</li>
+  </ul>
+</section>
+
+<!-- ================= TECHNOLOGIES USED ================= -->
+<section>
+  <h2>Technologies Used</h2>
+
+  <ul>
+    <li>HTML, CSS, JavaScript for frontend</li>
+    <li>Python for backend processing and analytics</li>
+    <li>Database for storing reports and user data</li>
+    <li>Mapping libraries for visualization (e.g., Leaflet, Google Maps API)</li>
+    <li>Data aggregation and reporting tools</li>
+  </ul>
+</section>
+
+<!-- ================= WORKFLOW ================= -->
+<section>
+  <h2>System Workflow</h2>
+
+  <ol>
+    <li>User submits a pollution or environmental report with details and location</li>
+    <li>System stores the report in the database</li>
+    <li>Reports are visualized on maps with real-time updates</li>
+    <li>Analytics generate trend reports and identify hotspots</li>
+    <li>Community members and authorities review data for awareness or action</li>
+  </ol>
+</section>
+
+<!-- ================= USE CASES ================= -->
+<section>
+  <h2>Use Case Scenarios</h2>
+
+  <p>
+    Eco Watcher is ideal for communities, NGOs, local authorities, and environmental
+    organizations who wish to monitor pollution and promote sustainable practices.
+  </p>
+
+  <p>
+    Individuals can report waste dumping, water pollution, air quality issues, or
+    hazardous sites. Organizations can analyze data to plan interventions.
+  </p>
+</section>
+
+<!-- ================= FUTURE ENHANCEMENTS ================= -->
+<section>
+  <h2>Future Enhancements</h2>
+
+  <ul>
+    <li>Mobile application for instant reporting</li>
+    <li>AI-based pollution prediction and alerts</li>
+    <li>Gamification to encourage community participation</li>
+    <li>Integration with IoT sensors for automated data collection</li>
+    <li>Advanced analytics and trend forecasting</li>
+  </ul>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section>
+  <h2>Conclusion</h2>
+
+  <p>
+    Eco Watcher exemplifies how technology and community collaboration can be
+    combined to monitor environmental conditions effectively.
+  </p>
+
+  <p>
+    By empowering citizens, providing real-time visualization, and enabling
+    data-driven insights, the platform contributes to environmental awareness
+    and sustainable development.
+  </p>
+</section>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
 
