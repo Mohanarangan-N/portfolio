@@ -1,271 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohanarangan | Portfolio</title>
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Segoe UI',sans-serif;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  color:#fff;
-}
-
-/* NAVBAR */
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:15px 40px;
-  background:rgba(0,0,0,0.6);
-  backdrop-filter:blur(10px);
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
-}
-
-nav h1{
-  font-size:22px;
-  font-weight:600;
-}
-
-nav ul{
-  display:flex;
-  list-style:none;
-  gap:25px;
-}
-
-nav ul li a{
-  text-decoration:none;
-  color:#fff;
-  font-weight:500;
-}
-
-.menu{
-  display:none;
-  font-size:26px;
-  cursor:pointer;
-}
-
-/* SECTIONS */
-section{
-  min-height:100vh;
-  padding:120px 10%;
-  animation:fadeUp 1s ease;
-}
-
-h2{
-  font-size:38px;
-  margin-bottom:20px;
-}
-
-p{
-  font-size:17px;
-  line-height:1.8;
-  opacity:0.95;
-}
-
-/* HERO */
-.hero{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-.hero h2{
-  font-size:50px;
-}
-
-.hero span{
-  color:#00eaff;
-}
-
-.btn{
-  margin-top:30px;
-  padding:14px 30px;
-  background:#00eaff;
-  color:#000;
-  border:none;
-  font-size:16px;
-  border-radius:30px;
-  cursor:pointer;
-  width:fit-content;
-}
-
-/* CARDS */
-.card{
-  background:rgba(255,255,255,0.08);
-  padding:25px;
-  border-radius:15px;
-  margin-top:25px;
-}
-
-/* TIMELINE */
-.timeline{
-  border-left:3px solid #00eaff;
-  padding-left:25px;
-}
-
-.timeline div{
-  margin-bottom:30px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  nav ul{
-    display:none;
-    position:absolute;
-    top:60px;
-    right:30px;
-    background:#000;
-    flex-direction:column;
-    padding:20px;
-    border-radius:10px;
-  }
-  nav ul.show{
-    display:flex;
-  }
-  .menu{
-    display:block;
-  }
-  section{
-    padding:120px 6%;
-  }
-}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Mohanarangan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-<nav>
-  <h1>Mohanarangan</h1>
-  <div class="menu" onclick="toggle()">⋮</div>
-  <ul id="nav">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav>
+      <div>
+        <h2>Mohanarangan</h2>
+      </div>
 
-<!-- HOME -->
-<section id="home" class="hero">
-  <h2>Hello, I’m <span>Mohanarangan</span></h2>
-  <p>
-    Computer Science and Engineering undergraduate passionate about Artificial Intelligence,
-    automation systems, and building intelligent real-world software solutions.
-  </p>
-  <button class="btn">Download Resume</button>
-</section>
+      <!-- Hamburger / 3-dot menu -->
+      <div onclick="toggleMenu()" style="cursor:pointer;">
+        &#8942;
+      </div>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <div class="card">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section>
+    <h1>Hello, I’m Mohanarangan</h1>
+    <h3>Computer Science and Engineering Undergraduate</h3>
+
     <p>
-      I am a Computer Science and Engineering student currently pursuing my B.Tech
-      at C.P. Manakular Vinayagar Engineering College, Puducherry.
-      I focus on understanding technology deeply and applying it practically
-      through real-world projects.
+      I am a passionate and self-motivated Computer Science and Engineering student
+      currently pursuing my Bachelor of Technology (B.Tech) at
+      C.P. Manakular Vinayagar Engineering College, Puducherry.
     </p>
+
     <p>
-      My interests lie in Artificial Intelligence, system automation, and modern web development.
-      I enjoy designing scalable, efficient, and user-focused software systems.
+      I am deeply interested in building intelligent software solutions that solve
+      real-world problems using Artificial Intelligence, automation, and modern
+      web technologies. I strongly believe that technology should be practical,
+      scalable, and impactful.
     </p>
-  </div>
-</section>
 
-<!-- EDUCATION -->
-<section id="education">
-  <h2>Education</h2>
-  <div class="timeline">
-    <div>
-      <h3>B.Tech – Computer Science & Engineering</h3>
-      <p>C.P. Manakular Vinayagar Engineering College, Puducherry (Currently 2nd Year)</p>
-    </div>
-    <div>
-      <h3>Schooling</h3>
-      <p>
-        Completed entire schooling in Puducherry, developing strong academic foundations,
-        discipline, and analytical thinking.
-      </p>
-    </div>
-  </div>
-</section>
+    <button>Download Resume</button>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
+  <!-- ================= ABOUT OVERVIEW ================= -->
+  <section>
+    <h2>Who I Am</h2>
 
-  <div class="card">
-    <h3>AI-Powered Store Shopping Assistant</h3>
     <p>
-      A retail automation system that processes grocery lists, checks inventory availability,
-      estimates billing, and optimizes shopping workflows using intelligent logic.
+      I am currently in my second year of Computer Science and Engineering, focusing
+      on strengthening my fundamentals while simultaneously applying my knowledge
+      through hands-on projects.
     </p>
-  </div>
 
-  <div class="card">
-    <h3>Balanced Plate – AI Meal Planner</h3>
     <p>
-      An AI-based meal planning application that suggests healthy meals based on ingredients,
-      dietary preferences, and nutritional balance.
+      My learning approach is practical and curiosity-driven. I prefer understanding
+      how systems work internally rather than relying only on theoretical knowledge.
+      This mindset has helped me gain clarity in programming, system design, and
+      problem-solving.
     </p>
-  </div>
 
-  <div class="card">
-    <h3>Eco Watcher – Environmental Platform</h3>
     <p>
-      A community-driven environmental monitoring platform enabling pollution reporting
-      and awareness through data visualization.
+      I actively explore areas such as Artificial Intelligence, digital automation,
+      workflow optimization, and web application development. I enjoy breaking down
+      complex problems into structured solutions and building systems that are
+      efficient and user-friendly.
     </p>
-  </div>
-</section>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="card">
-    <p><b>Programming:</b> Python, JavaScript, HTML, CSS</p>
-    <p><b>AI & Automation:</b> LLMs, Prompt Engineering, API Integration, n8n</p>
-    <p><b>Concepts:</b> System Design, Problem Solving, Web Development</p>
-  </div>
-</section>
+  <!-- ================= WHAT I DO ================= -->
+  <section>
+    <h2>What I Work On</h2>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: github.com/yourprofile</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-  </div>
-</section>
+    <p>
+      My work primarily revolves around designing and developing intelligent systems
+      that improve efficiency, reduce manual effort, and enhance user experience.
+    </p>
 
-<script>
-function toggle(){
-  document.getElementById("nav").classList.toggle("show");
-}
-</script>
+    <ul>
+      <li>
+        Building AI-powered applications that assist users in decision-making
+      </li>
+      <li>
+        Designing automation workflows to optimize repetitive processes
+      </li>
+      <li>
+        Developing clean and responsive web interfaces
+      </li>
+      <li>
+        Understanding system architecture and data flow
+      </li>
+    </ul>
+  </section>
+
+  <!-- ================= EDUCATION SNAPSHOT ================= -->
+  <section>
+    <h2>Education Snapshot</h2>
+
+    <p>
+      I am currently pursuing my Bachelor of Technology in Computer Science and
+      Engineering at C.P. Manakular Vinayagar Engineering College, Puducherry.
+    </p>
+
+    <p>
+      I completed my entire schooling in Puducherry, where I developed a strong
+      foundation in mathematics, science, and logical reasoning. My academic journey
+      has been consistent and structured, helping me transition smoothly into
+      engineering studies.
+    </p>
+
+    <a href="education.html">View Full Education Details</a>
+  </section>
+
+  <!-- ================= PROJECTS SNAPSHOT ================= -->
+  <section>
+    <h2>Project Highlights</h2>
+
+    <p>
+      I strongly believe that projects are the true reflection of an engineer’s
+      skills. I have worked on multiple projects that focus on real-world problems,
+      automation, and intelligent system design.
+    </p>
+
+    <ul>
+      <li>
+        <strong>AI-Powered Store Shopping Assistant</strong> – A retail automation
+        system that processes grocery lists, checks inventory availability, and
+        estimates billing.
+      </li>
+      <li>
+        <strong>Balanced Plate</strong> – An AI-based meal planning application that
+        provides personalized, nutrition-aware meal suggestions.
+      </li>
+      <li>
+        <strong>Eco Watcher</strong> – A community-driven environmental monitoring
+        platform focused on pollution awareness and reporting.
+      </li>
+    </ul>
+
+    <a href="projects.html">Explore All Projects</a>
+  </section>
+
+  <!-- ================= CALL TO ACTION ================= -->
+  <section>
+    <h2>Let’s Connect</h2>
+
+    <p>
+      I am open to learning opportunities, internships, collaborations, and
+      technical discussions. If you are interested in my work or would like to
+      collaborate, feel free to get in touch.
+    </p>
+
+    <a href="contact.html">Contact Me</a>
+  </section>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 </html>
