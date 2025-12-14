@@ -1,59 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Skills | Mohanarangan</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<header class="navbar">
-  <h2>Mohanarangan</h2>
+<!-- ================= NAVBAR ================= -->
+<header>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="education.html">Education</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+    <div>
+      <h2>Mohanarangan</h2>
+    </div>
+
+    <!-- Hamburger / 3-dot menu -->
+    <div onclick="toggleMenu()" style="cursor:pointer;">
+      &#8942;
+    </div>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-<div class="section">
+<!-- ================= SKILLS INTRO ================= -->
+<section>
+  <h1>Skills</h1>
+
+  <p>
+    I possess a combination of technical competencies, practical experience, 
+    and soft skills that enable me to design, develop, and deliver intelligent 
+    solutions. My skills are constantly evolving as I explore emerging technologies 
+    and real-world applications.
+  </p>
+</section>
+
+<!-- ================= TECHNICAL SKILLS ================= -->
+<section>
   <h2>Technical Skills</h2>
 
-  <p><strong>Programming Languages</strong></p>
+  <h3>Programming Languages</h3>
   <ul>
-    <li>Python – application logic, AI integration</li>
-    <li>JavaScript – interactive web functionality</li>
-    <li>HTML & CSS – responsive and modern UI design</li>
+    <li><strong>Python:</strong> Proficient in developing AI applications, automation scripts, and data analysis workflows.</li>
+    <li><strong>JavaScript:</strong> Skilled in building interactive and responsive web interfaces.</li>
+    <li><strong>HTML & CSS:</strong> Strong foundation in structuring web content and styling for professional interfaces.</li>
   </ul>
 
-  <p><strong>Artificial Intelligence & Automation</strong></p>
+  <h3>Artificial Intelligence & Machine Learning</h3>
   <ul>
-    <li>Large Language Models (LLMs)</li>
-    <li>Prompt engineering</li>
-    <li>OpenAI & Hugging Face APIs</li>
-    <li>Workflow automation using n8n</li>
+    <li><strong>Large Language Models (LLMs):</strong> Experienced with OpenAI API, Hugging Face models for text generation and intelligent processing.</li>
+    <li><strong>Prompt Engineering:</strong> Designing effective prompts for AI applications to achieve accurate outputs.</li>
+    <li><strong>AI-powered applications:</strong> Building real-world AI solutions, including Balanced Plate and AI store assistant.</li>
   </ul>
 
-  <p><strong>System & Web Development</strong></p>
+  <h3>Automation & Integrations</h3>
   <ul>
-    <li>Frontend UI development</li>
-    <li>API integration</li>
-    <li>Basic database concepts</li>
-    <li>System-level problem solving</li>
+    <li><strong>Digital Workflow Automation:</strong> Automating repetitive tasks using tools like n8n and custom scripts.</li>
+    <li><strong>API Integration:</strong> Connecting multiple systems to exchange data efficiently and reliably.</li>
+    <li><strong>Event-driven automation:</strong> Responding to triggers and building smart workflows for real-time problem-solving.</li>
   </ul>
-</div>
 
-<div class="section">
+  <h3>Frontend Development</h3>
+  <ul>
+    <li>Responsive web design for desktops, tablets, and mobile devices</li>
+    <li>UI layout, styling, and design principles for professional applications</li>
+    <li>Experience with basic React and dynamic component rendering</li>
+  </ul>
+
+  <h3>Backend & Data Handling</h3>
+  <ul>
+    <li>Designing and using REST APIs for data retrieval and operations</li>
+    <li>Database design, CRUD operations, and data management</li>
+    <li>Ensuring data consistency, reliability, and scalability</li>
+  </ul>
+</section>
+
+<!-- ================= SOFT SKILLS ================= -->
+<section>
   <h2>Soft Skills</h2>
+
   <ul>
-    <li>Analytical thinking</li>
-    <li>Self-learning attitude</li>
-    <li>Attention to detail</li>
-    <li>Logical reasoning</li>
-    <li>Consistency and discipline</li>
+    <li><strong>Problem Solving:</strong> Analytical approach to troubleshoot and develop efficient solutions.</li>
+    <li><strong>Logical Thinking:</strong> Ability to break down complex problems into manageable components.</li>
+    <li><strong>Continuous Learning:</strong> Eager to explore new technologies, methods, and trends.</li>
+    <li><strong>Attention to Detail:</strong> Ensuring high-quality and error-free development.</li>
+    <li><strong>System-level Thinking:</strong> Designing solutions with scalability, maintainability, and performance in mind.</li>
+    <li><strong>Communication:</strong> Explaining technical ideas clearly to non-technical audiences.</li>
+    <li><strong>Time Management:</strong> Efficiently prioritizing tasks and meeting deadlines.</li>
   </ul>
-</div>
+</section>
+
+<!-- ================= SKILLS PHILOSOPHY ================= -->
+<section>
+  <h2>Skills Development Philosophy</h2>
+
+  <p>
+    I believe that technical skills must be combined with practical application
+    and soft skills to create impactful solutions. By consistently learning,
+    experimenting with new tools, and applying knowledge to real-world
+    projects, I strive to build expertise that is both deep and versatile.
+  </p>
+
+  <p>
+    My approach focuses not only on acquiring knowledge but also on
+    implementing solutions that are effective, maintainable, and user-friendly.
+  </p>
+</section>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
 
 </body>
 </html>
