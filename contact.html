@@ -74,10 +74,30 @@
 </section>
 
 <!-- ================= OPTIONAL CONTACT FORM ================= -->
+<!-- ================= CONTACT FORM ================= -->
 <section>
   <h2>Send a Message</h2>
-  <p>Note: Contact form can be integrated in the future for direct messaging.</p>
+  <form action="" method="POST">
+    <div style="margin-bottom: 1rem;">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; border: 1px solid #ff7e5f; border-radius: 5px;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; border: 1px solid #ff7e5f; border-radius: 5px;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label for="subject">Subject</label><br>
+      <input type="text" id="subject" name="subject" required style="width: 100%; padding: 0.5rem; border: 1px solid #ff7e5f; border-radius: 5px;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5rem; border: 1px solid #ff7e5f; border-radius: 5px;"></textarea>
+    </div>
+    <button type="submit" style="background: linear-gradient(90deg, #ff7e5f, #feb47b); color: white; padding: 0.8rem 2rem; border: none; border-radius: 25px; cursor: pointer;">Send Message</button>
+  </form>
 </section>
+
 
 <!-- ================= SCRIPT ================= -->
 <script>
